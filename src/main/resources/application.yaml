@@ -1,3 +1,15 @@
 spring:
   application:
     name: SpringBoot_Mailing_FreeMarker
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 587
+    username: 73eeac7349c9bd
+    password: 08857495648d15
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
