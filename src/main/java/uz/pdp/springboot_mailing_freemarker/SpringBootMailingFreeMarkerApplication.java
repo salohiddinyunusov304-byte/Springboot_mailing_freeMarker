@@ -14,6 +14,8 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.task.TaskExecutor;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -103,5 +105,14 @@ public class SpringBootMailingFreeMarkerApplication {
         taskExecutor.setThreadNamePrefix("Prod-");
         return taskExecutor;
     }
+
+    ///  Email ni ozimiz yozsak..
+//    @Bean
+//    public JavaMailSender javaMailSender() {
+//        JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
+//        javaMailSender.setHost("smtp.gmail.com");
+//        javaMailSender.setPort(587);
+//        return javaMailSender;
+//    }
 
 }

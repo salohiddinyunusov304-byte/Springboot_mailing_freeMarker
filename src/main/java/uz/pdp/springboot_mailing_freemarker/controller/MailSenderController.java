@@ -21,4 +21,34 @@ public class MailSenderController {
         mailSenderService.sendMessage(username);
         return "Send mail successfuly";
     }
+
+    @GetMapping("/sendHtmlContent/{username}")
+    public String sendHtmlContent(@PathVariable String username) {
+        mailSenderService.sendHtmlContent(username);
+        return "Send mail successfuly";
+    }
+
+    @GetMapping("/sendHtmlPageV1/{username}")
+    public String sendHtmlPageV1(@PathVariable String username) {
+        mailSenderService.sendHtmlPageV1(username);
+        return "Send mail successfuly";
+    }
+
+    @GetMapping("/sendAttachment/{username}")
+    public String sendAttachment(@PathVariable String username) {
+        mailSenderService.sendAttachment(username);
+        return "Send mail successfuly";
+    }
+
+    @GetMapping("/sendHtmlPageWithImageV1/{username}")
+    public String sendHtmlPageWithImageV1(@PathVariable String username) {
+        mailSenderService.sendHtmlPageWithImageV1(username);
+        return "Send mail successfuly";
+    }
+
+    @GetMapping("/sendHtmlPageWithImageV2/{username}")
+    public String sendHtmlPageWithImageV2(@PathVariable String username) {
+        mailSenderService.sendHtmlPageWithImageV2(username);
+        return "Send mail successfuly";
+    }
 }
