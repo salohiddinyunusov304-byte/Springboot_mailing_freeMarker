@@ -13,3 +13,5 @@ spring:
           auth: true
           starttls:
             enable: true
+  freemarker:
+    template-loader-path: classpath:/templetes/

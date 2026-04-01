@@ -34,6 +34,12 @@ public class MailSenderController {
         return "Send mail successfuly";
     }
 
+    @GetMapping("/sendHtmlPageV2WithFreeMarker/{username}")
+    public String sendHtmlPageV2WithFreeMarker(@PathVariable String username) {
+        mailSenderService.sendHtmlPageWithFreeMarker(username);
+        return "Send mail successfuly";
+    }
+
     @GetMapping("/sendAttachment/{username}")
     public String sendAttachment(@PathVariable String username) {
         mailSenderService.sendAttachment(username);
