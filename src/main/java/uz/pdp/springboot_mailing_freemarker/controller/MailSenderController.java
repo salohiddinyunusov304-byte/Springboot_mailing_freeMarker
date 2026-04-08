@@ -1,6 +1,5 @@
 package uz.pdp.springboot_mailing_freemarker.controller;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
